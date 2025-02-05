@@ -7,21 +7,21 @@ function Contact() {
       <form className="contact-form">
         <div className="form-group">
           <label htmlFor="nombre">Nombre</label>
-          <input 
-            type="text" 
-            id="nombre" 
-            name="nombre" 
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
             placeholder="Ingresa tu nombre"
             required
           />
         </div>
-        
+
         <div className="form-group">
           <label htmlFor="apellido">Apellido</label>
-          <input 
-            type="text" 
-            id="apellido" 
-            name="apellido" 
+          <input
+            type="text"
+            id="apellido"
+            name="apellido"
             placeholder="Ingresa tu apellido"
             required
           />
@@ -29,10 +29,10 @@ function Contact() {
 
         <div className="form-group">
           <label htmlFor="email">Email</label>
-          <input 
-            type="email" 
-            id="email" 
-            name="email" 
+          <input
+            type="email"
+            id="email"
+            name="email"
             placeholder="Ingresa tu email"
             required
           />
@@ -40,9 +40,9 @@ function Contact() {
 
         <div className="form-group">
           <label htmlFor="mensaje">Mensaje</label>
-          <textarea 
-            id="mensaje" 
-            name="mensaje" 
+          <textarea
+            id="mensaje"
+            name="mensaje"
             rows="5"
             placeholder="Escribe tu mensaje aquí..."
             required

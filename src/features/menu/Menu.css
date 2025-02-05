@@ -1,0 +1,118 @@
+/* Importar Google Fonts: Raleway para las opciones y Fira Code para el nombre de la empresa */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Raleway:wght@400;700&display=swap');
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+.menu.scrolled {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-right a {
+    margin-right: 1.5rem;
+    text-decoration: none;
+    color: #333;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu-right a:hover {
+    color: #651eb7;
+}
+
+.menu-left {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.menu-left .company-name {
+    font-family: 'Fira Code', monospace;
+    color: #651eb7;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    clip-path: inset(0 100% 0 0);
+    animation: typewriter 1.5s steps(8, end) forwards, slideText 0.5s ease-out 1.5s forwards;
+}
+
+.menu-left .company-name::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #651eb7;
+    animation: blink 0.7s step-end infinite;
+}
+
+/* Efecto typewriter mediante clip-path */
+@keyframes typewriter {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    to {
+        clip-path: inset(0 0% 0 0);
+    }
+}
+
+/* Desplaza el texto hacia la derecha */
+@keyframes slideText {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(10px);
+    }
+}
+
+/* Parpadeo del cursor */
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.menu-left .logo {
+    width: 50px;
+    height: auto;
+    transform: translateX(50px);
+    opacity: 0;
+    animation: slideLogo 0.5s ease-out 1.5s forwards;
+}
+
+@keyframes slideLogo {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

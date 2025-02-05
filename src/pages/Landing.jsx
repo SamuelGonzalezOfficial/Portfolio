@@ -1,12 +1,12 @@
 import React from 'react'
 
 //Components
-import { Hero } from '../features/hero/Hero'
+import { Menu } from '../features/menu/Menu'
 
 function Landing() {
     return (
         <React.Fragment>
-            <Hero />
+            <Menu />
         </React.Fragment>
     )
 }

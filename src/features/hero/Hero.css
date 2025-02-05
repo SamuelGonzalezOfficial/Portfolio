@@ -1,0 +1,75 @@
+/* Importar Google Fonts: Raleway (variantes ligera, regular y bold) */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+.hero-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 0 5%;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-title--small {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #1c1c1c;
+}
+
+.brand-color {
+    font-family: 'Orbitron', 'Raleway', sans-serif;
+    font-size: 6rem;
+    color: #651eb7;
+}
+
+.hero-title {
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: slideUp 1s forwards;
+}
+
+.hero-subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #696969;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: slideUp 1s forwards;
+    animation-delay: 0.3s;
+}
+
+/* Botón con gradiente y animación al pasar el cursor */
+.hero-button {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #651eb7;
+    opacity: 0;
+    animation: slideUp 1s forwards;
+    animation-delay: 0.8s;
+}

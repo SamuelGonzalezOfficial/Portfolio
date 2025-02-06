@@ -6,18 +6,25 @@ function Testimonials() {
     return (
         <div className="testimonials">
             <div className='testimonials-container'>
-                <div className="testimonial-card card-1">
-                    <p className="testimonials-name">John Doe</p>
-                    <p className="testimonals-job">CEO de Sunset technologies</p>
+                <h2 className="testimonials-title">
+                    ¿Qué dicen de nosotros?
+                </h2>
+                <div className="testimonial-card">
+                    <p className="testimonials-name">
+                        Carlos Garrido
+                    </p>
+                    <p className="testimonals-job">CEO • SMI</p>
                     <p className="testimonials-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quam omnis assumenda dolorum sequi laudantium ducimus. Velit unde praesentium reiciendis tempore veritatis aliquid, provident nostrum, iste, ex vero distinctio assumenda!
+                        AInstein me ha abierto los ojos. En pocos meses estamos incorporando super poderes que creíamos imposibles.
                     </p>
                 </div>
-                <div className="testimonial-card card-2">
-                    <p className="testimonials-name">John Doe</p>
-                    <p className="testimonals-job">CEO de Sunset technologies</p>
+                <div className="testimonial-card">
+                    <p className="testimonials-name">
+                        Carlos Rodr&iacute;guez
+                    </p>
+                    <p className="testimonals-job">CTO • DataDrive</p>
                     <p className="testimonials-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quam omnis assumenda dolorum sequi laudantium ducimus. Velit unde praesentium reiciendis tempore veritatis aliquid, provident nostrum, iste, ex vero distinctio assumenda!
+                        Gracias a AInstein, implementamos soluciones de IA que redujeron nuestros costos operativos en un 25%.
                     </p>
                 </div>
             </div>

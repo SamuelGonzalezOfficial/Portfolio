@@ -13,7 +13,6 @@ function Hero() {
         <button className="hero-button">Descubre Más</button>
       </div>
       <div className="hero-bg">
-        huhush
       </div>
     </div>
   );

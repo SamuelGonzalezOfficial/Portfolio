@@ -6,12 +6,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
     padding: 0 5%;
 }
 
 .hero-content {
     text-align: center;
+    position: relative;
+    z-index: 1000;
+}
+
+/*Conserva estos estilos ya que ayudan al posicionamiento AI!*/
+.hero-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 500;
 }
 
 @keyframes slideUp {

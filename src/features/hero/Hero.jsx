@@ -12,6 +12,9 @@ function Hero() {
         </h2>
         <button className="hero-button">Descubre Más</button>
       </div>
+      <div className="hero-bg">
+        huhush
+      </div>
     </div>
   );
 }

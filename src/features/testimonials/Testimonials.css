@@ -4,6 +4,30 @@
     background: linear-gradient(to bottom right, #0f0f1a, #1a1a2f);
 }
 
+.testimonials-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 60px;
+    background-image: linear-gradient(to right,
+        #651eb7,
+        #9D00FF 25%,
+        #ff00fb 50%,
+        #9D00FF 75%,
+        #651eb7
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    width: 100%;
+    background-size: 200% 100%;
+    animation: gradient-scroll 3s linear infinite, slideUp 0.8s forwards;
+    opacity: 0;
+    animation-delay: 0.2s;
+    padding: 0 20px;
+}
+
 .testimonials-container {
     max-width: 1200px;
     margin: 0 auto;

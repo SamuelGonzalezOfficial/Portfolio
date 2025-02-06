@@ -5,10 +5,10 @@ import './Testimonials.css'
 function Testimonials() {
     return (
         <div className="testimonials">
+            <h2 className="testimonials-title">
+                ¿Qué dicen de nosotros?
+            </h2>
             <div className='testimonials-container'>
-                <h2 className="testimonials-title">
-                    ¿Qué dicen de nosotros?
-                </h2>
                 <div className="testimonial-card">
                     <p className="testimonials-name">
                         Carlos Garrido

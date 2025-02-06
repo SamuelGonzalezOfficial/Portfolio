@@ -5,6 +5,7 @@
 }
 
 .testimonials-title {
+    width: 100%;
     font-family: 'Orbitron', sans-serif;
     font-size: 3.5rem;
     text-align: center;
@@ -19,7 +20,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    display: inline-block;
+    display: block;
     width: 100%;
     background-size: 200% 100%;
     animation: gradient-scroll 3s linear infinite, slideUp 0.8s forwards;

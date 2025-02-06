@@ -7,7 +7,6 @@ function Testimonials() {
         <div className="testimonials">
             <div className='testimonials-container'>
                 <h2 className="testimonials-title">
-                    <span className="hero-title--small">Testimonios</span><br />
                     ¿Qué dicen de nosotros?
                 </h2>
                 <div className="testimonial-card">

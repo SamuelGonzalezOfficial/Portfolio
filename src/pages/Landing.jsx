@@ -10,7 +10,6 @@ function Landing() {
         <React.Fragment>
             <Menu />
             <Hero />
-            <Contact />
         </React.Fragment>
     )
 }

@@ -96,16 +96,48 @@
 .about-image img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    animation: levitate 5s ease-in-out infinite;
+}
+
+@keyframes levitate {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 768px) {
     .about-content {
         grid-template-columns: 1fr;
     }
-    
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .about-image {
-        order: -1;
+        display: none;
+    }
+
+    .about-title {
+        text-align: center;
+    }
+
+    .about-description {
+        text-align: justify;
+    }
+
+    .about-button {
+        margin: auto;
     }
 }

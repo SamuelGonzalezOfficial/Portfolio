@@ -46,7 +46,7 @@
     font-weight: 900;
     line-height: 1.1;
     color: #1c1c1c;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .brand-color {
@@ -193,4 +193,79 @@
     opacity: 0.6;
     border-radius: 2px;
     animation: gradient-scroll 3s linear infinite;
+}
+
+/* ============================
+   ESTILOS RESPONSIVOS
+=============================== */
+
+/* Para pantallas medianas (hasta 1024px) */
+@media (max-width: 1024px) {
+    .hero-container {
+        padding: 0 3%;
+    }
+
+    .hero-title {
+        font-size: clamp(3rem, 7vw, 5rem);
+    }
+
+    .brand-color {
+        font-size: clamp(3rem, 7vw, 6rem);
+    }
+}
+
+/* Para tablets y pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    .hero-container {
+        padding: 0 2%;
+    }
+
+    .hero-title {
+        font-size: clamp(2.5rem, 8vw, 4rem);
+    }
+
+    .hero-title--small {
+        font-size: clamp(1.8rem, 5vw, 3rem);
+    }
+
+    .brand-color {
+        font-size: clamp(2.5rem, 7vw, 5rem);
+    }
+
+    .hero-subtitle {
+        font-size: clamp(0.9rem, 2vw, 1.2rem);
+        max-width: 90%;
+        margin: 1rem auto 2.5rem;
+    }
+
+    .hero-button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+/* Para móviles (hasta 480px) */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: clamp(2rem, 9vw, 3.5rem);
+    }
+
+    .hero-title--small {
+        font-size: clamp(1.5rem, 6vw, 2.5rem);
+    }
+
+    .brand-color {
+        font-size: clamp(2rem, 8vw, 4rem);
+    }
+
+    .hero-subtitle {
+        font-size: clamp(0.8rem, 3vw, 1rem);
+        max-width: 95%;
+        margin: 0.8rem auto 2rem;
+    }
+
+    .hero-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
 }

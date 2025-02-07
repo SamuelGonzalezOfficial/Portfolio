@@ -221,7 +221,7 @@
     }
 
     .hero-title {
-        font-size: clamp(2.5rem, 8vw, 4rem);
+        font-size: 3.5rem;
     }
 
     .hero-title--small {
@@ -229,7 +229,7 @@
     }
 
     .brand-color {
-        font-size: clamp(2.5rem, 7vw, 5rem);
+        font-size: 3.5rem;
     }
 
     .hero-subtitle {
@@ -252,10 +252,6 @@
 
     .hero-title--small {
         font-size: clamp(1.5rem, 6vw, 2.5rem);
-    }
-
-    .brand-color {
-        font-size: clamp(2rem, 8vw, 4rem);
     }
 
     .hero-subtitle {

@@ -60,12 +60,12 @@
     transform: rotate(45deg);
     transition: 0.4s;
 }
-
+/*
 .testimonial-card:hover {
     transform: translateY(-10px) perspective(1000px) rotateX(5deg) rotateY(5deg);
     box-shadow: 0 20px 40px rgba(101, 30, 183, 0.2);
 }
-
+*/
 .testimonial-card:hover::before {
     transform: rotate(45deg) translateY(100%);
 }

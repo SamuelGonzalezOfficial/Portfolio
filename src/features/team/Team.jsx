@@ -3,35 +3,64 @@ import './Team.css';
 
 function Team() {
   return (
-    <div className="team">
-      <div className="team-container">
-        <div className="card">
-          <img
-            src="https://via.placeholder.com/150"
-            alt="John Doe"
-            className="profile-image"
-          />
-          <h2 className="name">Nicol&aacute;s</h2>
-          <h3 className="position">Egresado de Ingeniería y con un magíster en Ingeniería Industrial de la Universidad Católica</h3>
-          <p className="description">
-          siempre ha creído en el poder del conocimiento y la tecnología para ampliar las capacidades humanas. Como líder de proyectos complejos, su misión ha sido utilizar IA para mejorar procesos, resolver problemas que antes parecían insuperables y anticiparse a las necesidades de las empresas. A través de AInstein, su objetivo es dar a las organizaciones las herramientas que necesitan para construir sobre los logros del pasado y enfrentar un futuro lleno de posibilidades.
-          </p>
-        </div>
-
-        <div className="card">
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Jane Smith"
-            className="profile-image"
-          />
-          <h2 className="name">Ignacio</h2>
-          <h3 className="position">Egresado de Ingeniería Industrial de la Universidad de Bio-Bío y con un magíster en Ingeniería Industrial</h3>
-          <p className="description">
-            El progreso no solo se trata de innovación, sino de mejorar la vida de las personas. En un mundo donde la IA será un catalizador de cambios radicales, su capacidad para analizar y resolver problemas estratégicos y operativos es clave. Su enfoque está en ofrecer soluciones personalizadas y efectivas que permitan a las empresas adaptarse a la nueva era tecnológica.
-          </p>
-        </div>
+    <section className="team">
+      <div className="team-header">
+        <h2 className="team-title">Equipo Directivo</h2>
+        <p className="team-subtitle">Liderando la revolución de IA contextual</p>
       </div>
-    </div>
+      
+      <div className="team-grid">
+        <article className="team-card">
+          <div className="card-content">
+            <div className="image-container">
+              <img
+                src="https://via.placeholder.com/300x400.png?text=Nicol%C3%A1s"
+                alt="Nicolás"
+                className="profile-image"
+              />
+              <div className="social-links">
+                <a href="#" className="social-icon">↗</a>
+                <a href="#" className="social-icon">↗</a>
+              </div>
+            </div>
+            <div className="card-details">
+              <h3 className="name">Nicolás</h3>
+              <p className="position">CEO & Co-Fundador</p>
+              <div className="divider"></div>
+              <p className="description">
+                Líder en transformación digital con experiencia en implementación de IA empresarial.
+                Magíster en Ingeniería Industrial UC.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article className="team-card">
+          <div className="card-content">
+            <div className="image-container">
+              <img
+                src="https://via.placeholder.com/300x400.png?text=Ignacio"
+                alt="Ignacio"
+                className="profile-image"
+              />
+              <div className="social-links">
+                <a href="#" className="social-icon">↗</a>
+                <a href="#" className="social-icon">↗</a>
+              </div>
+            </div>
+            <div className="card-details">
+              <h3 className="name">Ignacio</h3>
+              <p className="position">CTO & Co-Fundador</p>
+              <div className="divider"></div>
+              <p className="description">
+                Experto en arquitecturas de IA escalables. Magíster en Ingeniería Industrial 
+                con especialización en sistemas inteligentes.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
   );
 }
 

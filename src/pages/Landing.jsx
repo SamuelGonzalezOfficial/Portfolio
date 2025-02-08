@@ -8,6 +8,7 @@ import { Testimonials } from '../features/testimonials/Testimonials'
 import { About } from '../features/about/About'
 import { Vision } from '../features/vision/Vision'
 import { Services } from '../features/services/Services'
+import { Team } from '../features/team/Team.jax'
 
 function Landing() {
     return (
@@ -18,6 +19,7 @@ function Landing() {
             <About />
             <Vision />
             <Services />
+            <Team />
         </React.Fragment>
     )
 }

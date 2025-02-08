@@ -6,6 +6,7 @@ import { Hero } from '../features/hero/Hero'
 import { Contact } from '../features/contact/Contact'
 import { Testimonials } from '../features/testimonials/Testimonials'
 import { About } from '../features/about/About'
+import { Vision } from '../features/vision/Vision'
 import { Services } from '../features/services/Services'
 
 function Landing() {
@@ -15,6 +16,7 @@ function Landing() {
             <Hero />
             <Testimonials />
             <About />
+            <Vision />
             <Services />
         </React.Fragment>
     )

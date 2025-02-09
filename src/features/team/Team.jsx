@@ -2,6 +2,9 @@ import React from 'react';
 import '../../assets/styles/global.css'
 import './Team.css';
 
+import nicolasProfile from '../../assets/images/lego1.jpg'
+import ignacioProfile from '../../assets/images/lego2.jpg'
+
 function Team() {
   return (
     <section className="team">
@@ -12,7 +15,7 @@ function Team() {
         <article className="team-card">
           <div className="image-container">
             <img
-              src="https://via.placeholder.com/300x400.png?text=Nicolás"
+              src={nicolasProfile}
               alt="Nicolás"
               className="profile-image"
             />
@@ -34,13 +37,11 @@ function Team() {
         <article className="team-card">
           <div className="card-content">
             <div className="image-container">
-                {/*
               <img
-                src="https://via.placeholder.com/300x400.png?text=Ignacio"
+                src={ignacioProfile}
                 alt="Ignacio"
                 className="profile-image"
               />
-                */}
               <div className="social-links">
                 <a href="#" className="social-icon">↗</a>
                 <a href="#" className="social-icon">↗</a>

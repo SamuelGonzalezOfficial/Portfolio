@@ -49,9 +49,10 @@
     -webkit-background-clip: text;
     color: transparent;
     display: block;
+    width: 100%;
     background-size: 200% 100%;
     animation: gradient-scroll 3s linear infinite, slideUp 0.8s forwards;
-    opacity: 1;
+    opacity: 0;
     animation-delay: 0.2s;
     padding: 0 20px;
 }
@@ -75,18 +76,35 @@
 }
 
 .team-card {
+    position: relative;
+    padding: 40px;
+    border-radius: 16px;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(101, 30, 183, 0.3);
-    border-radius: 16px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     overflow: hidden;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(101, 30, 183, 0.1), transparent);
+    transform: rotate(45deg);
+    transition: 0.4s;
 }
 
 .team-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-10px) perspective(1000px) rotateX(5deg) rotateY(5deg);
+    box-shadow: 0 20px 40px rgba(101, 30, 183, 0.2);
+}
+
+.team-card:hover::before {
+    transform: rotate(45deg) translateY(100%);
 }
 
 .image-container {

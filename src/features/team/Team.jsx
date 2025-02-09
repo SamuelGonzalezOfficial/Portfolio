@@ -1,23 +1,25 @@
 import React from 'react';
+import '../../assets/styles/global.css'
 import './Team.css';
 
 function Team() {
   return (
     <section className="team">
       <div className="team-header">
-        <h2 className="team-title">Equipo Directivo</h2>
-        <p className="team-subtitle">Liderando la revolución de IA contextual</p>
+        <h2 className="team-title">Equipo Ainstein</h2>
       </div>
       
       <div className="team-grid">
         <article className="team-card">
           <div className="card-content">
             <div className="image-container">
+                {/*
               <img
                 src="https://via.placeholder.com/300x400.png?text=Nicol%C3%A1s"
                 alt="Nicolás"
                 className="profile-image"
               />
+                */}
               <div className="social-links">
                 <a href="#" className="social-icon">↗</a>
                 <a href="#" className="social-icon">↗</a>
@@ -38,11 +40,13 @@ function Team() {
         <article className="team-card">
           <div className="card-content">
             <div className="image-container">
+                {/*
               <img
                 src="https://via.placeholder.com/300x400.png?text=Ignacio"
                 alt="Ignacio"
                 className="profile-image"
               />
+                */}
               <div className="social-links">
                 <a href="#" className="social-icon">↗</a>
                 <a href="#" className="social-icon">↗</a>

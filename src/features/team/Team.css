@@ -8,11 +8,36 @@
 }
 
 .team {
-  padding: 8rem 2rem;
-  background: #651eb7;
+  padding: 4rem 2rem;
   position: relative;
   overflow: hidden;
+  animation: fadeIn 1s ease-out forwards;
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.1), rgba(25 
+255, 255, 0.05));
 }
+
+.team::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #9D00FF 0%, #651eb7 100%);
+    z-index: -1;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
 /*
 .team::before {
   content: '';

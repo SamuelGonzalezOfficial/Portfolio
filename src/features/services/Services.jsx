@@ -51,12 +51,42 @@ function Services() {
                         <div className="modal">
                             <div className="modal-content">
                                 <h2>IA Central</h2>
-                                <h3>El guard&iacute;an de tu empresa</h3>
-                                <p>A la IA Central la llamamos el núcleo cognitivo de la organización. Su función consiste en apoyar cualquier tipo de procesamiento de datos que requiera la empresa. Reconocemos 2 formas de operar: 1) Procesamiento de datos rápido para tareas que requieren menos capacidades cognitivas, como generar un resumen, corregir la redacción de un correo electrónico, ayudar en una lluvia de ideas, analizar datos, etc. 2) Procesamiento de datos lento para tareas que requieren más capacidades cognitivas, como el desarrollo de una propuesta comercial, la generación de contenido de alto valor, la creación de un plan estratégico, etc. La implementación de este tipo de IA para empresas pequeñas se realiza en 3 fases, en un periodo de 3 meses, con un costo de 6.000 USD.</p>
+                                <h3>El guardíán de tu empresa</h3>
+                                <p>
+                                    <strong>El núcleo cognitivo de tu organización</strong>
+                                    <br><br>
+                                    La IA Central actúa como el cerebro central de tu empresa, procesando datos de manera eficiente en dos modalidades principales:
+                                </p>
+                                <p>
+                                    <strong>1. Procesamiento Rápido:</strong> Para tareas que requieren menos complejidad cognitiva, como:
+                                </p>
+                                <ul style={{marginBottom: '20px'}}>
+                                    <li>Generación de resúmenes</li>
+                                    <li>Corrección de textos</li>
+                                    <li>Asistencia en lluvias de ideas</li>
+                                    <li>Análisis básico de datos</li>
+                                </ul>
+                                <p>
+                                    <strong>2. Procesamiento Profundo:</strong> Para tareas que requieren mayor complejidad, como:
+                                </p>
+                                <ul style={{marginBottom: '30px'}}>
+                                    <li>Desarrollo de propuestas comerciales</li>
+                                    <li>Generación de contenido premium</li>
+                                    <li>Creación de planes estratégicos</li>
+                                </ul>
+                                <p>
+                                    <strong>Implementación en 3 fases:</strong><br>
+                                    - Fase 1: Análisis y planificación<br>
+                                    - Fase 2: Desarrollo e integración<br>
+                                    - Fase 3: Optimización y entrega<br>
+                                    <br>
+                                    Duración total: 3 meses<br>
+                                    Inversión: $6,000 USD
+                                </p>
                                 <button onClick={closeModal}>Cerrar</button>
                             </div>
                             <div className="modal-image">
-                                <img src="src/assets/images/tech.svg" alt="pop up image" />
+                                <img src="/src/assets/images/tech.svg" alt="IA Central" />
                             </div>
                         </div>
                     </>

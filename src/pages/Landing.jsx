@@ -20,6 +20,7 @@ function Landing() {
             <Vision />
             <Services />
             <Team />
+            <Contact />
         </React.Fragment>
     )
 }

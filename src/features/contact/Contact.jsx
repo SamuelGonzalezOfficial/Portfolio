@@ -1,8 +1,8 @@
 import './Contact.css';
-import { useState } from 'react'; // Import useState hook for form state management
+import { useState } from 'react';
 
 function Contact() {
-  // State to manage form data
+  // Estado para manejar los datos del formulario
   const [formData, setFormData] = useState({
     nombre: '',
     apellido: '',
@@ -10,47 +10,38 @@ function Contact() {
     mensaje: ''
   });
 
-  // State to manage loading and error states
+  // Estados para manejar carga, error y éxito
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
 
-  // Handle input changes
+  // Manejo de cambios en los campos
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  // Handle form submission
+  // Manejo del envío del formulario
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // Reset states
     setError(null);
     setSuccess(false);
     setIsLoading(true);
 
     try {
-      // Send POST request to API
+      // Enviar petición POST a la API
       const response = await fetch('http://localhost:3800/mail/', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
 
-      // Check if response is ok
       if (!response.ok) {
-        throw new Error('Error sending message');
+        throw new Error('Error al enviar el mensaje');
       }
 
-      // Handle successful response
       setSuccess(true);
-      // Reset form after successful submission
+      // Reiniciar formulario tras envío exitoso
       setFormData({
         nombre: '',
         apellido: '',
@@ -58,13 +49,12 @@ function Contact() {
         mensaje: ''
       });
     } catch (err) {
-      // Handle errors
       setError(err.message);
     } finally {
-      // Reset loading state
       setIsLoading(false);
     }
   };
+
   return (
     <div className="contact-container">
       <h2 className="contact-title">Contáctanos</h2>
@@ -113,28 +103,19 @@ function Contact() {
           <textarea
             id="mensaje"
             name="mensaje"
-            rows="5"
             placeholder="Escribe tu mensaje aquí..."
             value={formData.mensaje}
             onChange={handleInputChange}
+            rows="5"
           ></textarea>
         </div>
 
-        <button
-          type="submit"
-          className="contact-button"
-          disabled={isLoading}
-        >
+        <button type="submit" className="contact-button" disabled={isLoading}>
           {isLoading ? 'Enviando...' : 'Enviar Mensaje'}
         </button>
 
-        {/* Show success or error messages */}
-        {error && (
-          <p className="error-message">Error: {error}</p>
-        )}
-        {success && (
-          <p className="success-message">¡Mensaje enviado con éxito!</p>
-        )}
+        {error && <p className="error-message">Error: {error}</p>}
+        {success && <p className="success-message">¡Mensaje enviado con éxito!</p>}
       </form>
     </div>
   );

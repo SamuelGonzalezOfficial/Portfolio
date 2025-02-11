@@ -8,19 +8,25 @@
   overflow: hidden;
 }
 
+/* Contenedor con fondo sutil y bordes redondeados para destacar la línea del tiempo */
 .timeline-container {
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
+  padding: 2rem;
+  background: radial-gradient(circle at center, rgba(101, 30, 183, 0.05), transparent 70%);
+  border-radius: 16px;
 }
 
 .models-title {
   font-family: 'Raleway', sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
   margin-bottom: 2rem;
   position: relative;
   z-index: 2;
+  color: #1c1c1c;
 }
 
 .timeline {
@@ -28,7 +34,7 @@
   padding: 2rem 0;
 }
 
-/* Línea central */
+/* Línea central con gradiente y sombra */
 .timeline::before {
   content: "";
   position: absolute;
@@ -38,9 +44,10 @@
   width: 4px;
   background: linear-gradient(to bottom, #651eb7, #9D00FF, #ff00fb);
   transform: translateX(-50%);
+  box-shadow: 0 0 15px rgba(101, 30, 183, 0.3);
 }
 
-/* Cada elemento de la línea */
+/* Estilo de cada elemento de la línea */
 .timeline-item {
   position: relative;
   width: 50%;
@@ -60,25 +67,26 @@
   text-align: left;
 }
 
-/* Contenido del elemento */
+/* Caja de contenido con fondo claro, bordes redondeados y transición en hover */
 .timeline-item .content {
-  background: #f7f7f7;
-  padding: 1.5rem;
-  border-radius: 8px;
+  background: #f0f0f0;
+  padding: 1.8rem;
+  border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   position: relative;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .timeline-item .content:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .timeline-item h3 {
   font-family: 'Orbitron', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #1c1c1c;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .timeline-item p {
@@ -88,28 +96,35 @@
   line-height: 1.6;
 }
 
-/* Círculo indicador */
+/* Círculo indicador con efecto de escala y sombra */
 .timeline-item .circle {
   position: absolute;
   top: 20px;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   background: #fff;
   border: 4px solid;
   border-image: linear-gradient(to bottom, #651eb7, #9D00FF, #ff00fb) 1;
   border-radius: 50%;
   z-index: 2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.timeline-item .circle:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(101, 30, 183, 0.5);
+}
+
+/* Posicionamiento de los círculos según el lado */
 .timeline-item.left .circle {
-  right: -10px;
+  right: -12px;
 }
 
 .timeline-item.right .circle {
-  left: -10px;
+  left: -12px;
 }
 
-/* Animación de aparición */
+/* Animación de aparición: fadeInUp */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -121,7 +136,7 @@
   }
 }
 
-/* Animación escalonada para cada elemento */
+/* Retrasos escalonados para cada elemento */
 .timeline-item:nth-child(1) {
   animation-delay: 0.3s;
 }
@@ -132,20 +147,25 @@
   animation-delay: 0.7s;
 }
 
-/* Responsive: en móviles se simplifica la línea del tiempo */
+/* RESPONSIVIDAD: Para pantallas pequeñas, la línea degradada se coloca a la izquierda y 
+   todos los elementos se muestran en columna a la derecha */
 @media (max-width: 768px) {
   .timeline::before {
-    left: 8%;
+    left: 30px;
+    transform: none;
   }
-  .timeline-item {
+  .timeline-item,
+  .timeline-item.left,
+  .timeline-item.right {
     width: 100%;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    text-align: left;
     left: 0;
+    text-align: left;
+    padding-left: 70px;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
   }
   .timeline-item .circle {
-    left: 0;
+    left: 15px;
     right: auto;
   }
 }

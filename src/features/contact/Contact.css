@@ -22,7 +22,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 5%;
+  padding: 80px 5%;
   overflow: hidden;
 }
 
@@ -54,7 +54,7 @@
     font-family: 'Raleway', sans-serif;
     font-size: 3rem;
     font-weight: 900;
-    margin-bottom: 2rem;
+    margin-bottom: 40px;
     color: #1c1c1c;
   }
 /*

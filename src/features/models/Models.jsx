@@ -5,30 +5,33 @@ function Models() {
   return (
     <section className="models">
       <div className="models-container">
-        <h2 className="models-title">Asesoría por etapas</h2>
+        <div className="title-wrapper">
+          <h2 className="models-title">Asesoría por etapas</h2>
+          <div className="gradient-bar"></div>
+        </div>
         <p className="models-subtitle">
-          Descubre cómo nuestros modelos de IA se adaptan a las necesidades de tu empresa.
+          Potencia tu empresa con modelos de IA personalizados que se adaptan a tus necesidades.
         </p>
-        <div className="models-cards">
+        <div className="models-grid">
           <div className="model-card">
             <h3 className="model-name">Skynet90</h3>
             <p className="model-description">
-              En <strong>Skynet90</strong> ofrecemos un agente de IA con un comportamiento
-              personalizado, diseñado para adaptarse a las necesidades específicas de tu empresa.
+              Ofrecemos un agente de IA con un comportamiento personalizado, diseñado para responder
+              a las particularidades de tu empresa.
             </p>
           </div>
           <div className="model-card">
             <h3 className="model-name">Skynet180</h3>
             <p className="model-description">
-              Con <strong>Skynet180</strong> alimentamos al agente de IA con todo el contexto de
-              tu empresa y documentos relevantes, permitiéndole tomar decisiones más informadas.
+              Integramos el contexto completo de tu empresa y documentos relevantes para dotar al
+              agente de decisiones más informadas.
             </p>
           </div>
           <div className="model-card">
             <h3 className="model-name">Skynet360</h3>
             <p className="model-description">
-              En <strong>Skynet360</strong> tu agente de IA desarrolla “superpoderes”: habilidades en
-              programación, encadenar múltiples acciones e integración con diversas herramientas.
+              El agente de IA desarrolla “superpoderes”: habilidades en programación, encadenar
+              múltiples acciones e integración avanzada con tus herramientas.
             </p>
           </div>
         </div>

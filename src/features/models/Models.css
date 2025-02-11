@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+.models {
+  padding: 4rem 5%;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+}
+
+.models-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.models-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #1c1c1c;
+}
+
+.models-subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.models-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.model-card {
+  background-color: #f7f7f7;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  transition: transform 0.3s ease;
+}
+
+.model-card:hover {
+  transform: translateY(-5px);
+}
+
+.model-name {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #1c1c1c;
+}
+
+.model-description {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+  .models-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

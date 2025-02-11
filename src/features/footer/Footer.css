@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Raleway:wght@400;700&display=swap');
+
+.footer {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 2rem 5%;
+}
+
+/* Sección superior: logo, nombre y botón */
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-brand .logo {
+  width: 50px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+.footer-brand .company-name {
+  font-family: 'Fira Code', monospace;
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0;
+}
+
+/* Botón para contactar al desarrollador */
+.footer-button {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-button:hover {
+  background-color: #fff;
+  color: #1c1c1c;
+}
+
+/* Sección inferior: copyright */
+.footer-bottom {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9rem;
+  color: #ccc;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

@@ -9,6 +9,7 @@ import { About } from '../features/about/About'
 import { Vision } from '../features/vision/Vision'
 import { Services } from '../features/services/Services'
 import { Team } from '../features/team/Team.jsx'
+import { Footer } from '../features/footer/Footer.jsx'
 
 function Landing() {
     return (
@@ -21,6 +22,7 @@ function Landing() {
             <Services />
             <Team />
             <Contact />
+            <Footer />
         </React.Fragment>
     )
 }

@@ -30,14 +30,15 @@ function Contact() {
 
     try {
       // Enviar petición POST a la API
-      const response = await fetch('http://localhost:3800/mail/', {
+      const response = await fetch('http://localhost:3800/mail', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
 
       if (!response.ok) {
-        throw new Error('Error al enviar el mensaje');
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Error al enviar el mensaje');
       }
 
       setSuccess(true);

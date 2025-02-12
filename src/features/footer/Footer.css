@@ -51,7 +51,7 @@
   color: #1c1c1c;
 }
 
-/* Sección inferior: copyright */
+/* Sección inferior: copyright y crédito en la misma línea */
 .footer-bottom {
   text-align: center;
   font-family: 'Raleway', sans-serif;
@@ -59,6 +59,24 @@
   color: #ccc;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: 1rem;
+}
+
+.footer-bottom p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-credit a {
+  color: rgba(255, 255, 255, 0.4); /* color sutil con poco contraste */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-credit a:hover {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* Responsive */

@@ -1,6 +1,16 @@
 import './Hero.css';
 
 function Hero() {
+  const handleScroll = (e) => {
+    e.preventDefault();
+    const section = document.querySelector('#testimonios');
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  };
   return (
     <div className="hero-container">
       <div className="hero-content">
@@ -15,7 +25,7 @@ function Hero() {
           Llevamos tu empresa al siguiente nivel adaptándola al nuevo panorama del siglo XXI
         </h2>
         <button className="hero-button">
-          <span>Descubre Más</span>
+          <a href="#testimonios" onClick={handleScroll}>Descubre Más</a>
           <svg className="rocket-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
           </svg>

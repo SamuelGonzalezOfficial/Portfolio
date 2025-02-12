@@ -7,7 +7,7 @@ import ignacioProfile from '../../assets/images/lego2.jpg'
 
 function Team() {
   return (
-    <section className="team">
+    <section className="team" id="equipo">
       <h2 className="team-title">
         Equipo AInstein
       </h2>

@@ -57,7 +57,7 @@ function Contact() {
   };
 
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contacto">
       <h2 className="contact-title">Contáctanos</h2>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="form-group">

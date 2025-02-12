@@ -12,11 +12,21 @@ function Menu() {
 
         window.addEventListener('scroll', handleScroll);
 
-        // Limpieza del evento al desmontar el componente
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    const handleSmoothScroll = (event, targetId) => {
+        event.preventDefault();
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    };
 
     return (
         <nav className={`menu ${scrolled ? 'scrolled' : ''}`}>
@@ -25,10 +35,11 @@ function Menu() {
                 <span className="company-name">Ainstein</span>
             </div>
             <div className="menu-right">
-                <a href="#testimonios">Testimonios</a>
-                <a href="#caracteristicas">Características</a>
-                <a href="#precios">Precios</a>
-                <a href="#contacto">Contacto</a>
+                <a href="#testimonios" onClick={(e) => handleSmoothScroll(e, '#testimonios')}>Testimonios</a>
+                <a href="#nosotros" onClick={(e) => handleSmoothScroll(e, '#nosotros')}>Nosotros</a>
+                <a href="#servicios" onClick={(e) => handleSmoothScroll(e, '#servicios')}>Servicios</a>
+                <a href="#equipo" onClick={(e) => handleSmoothScroll(e, '#equipo')}>Equipo</a>
+                <a href="#contacto" onClick={(e) => handleSmoothScroll(e, '#contacto')}>Contacto</a>
             </div>
         </nav>
     );

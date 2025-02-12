@@ -127,9 +127,6 @@
 
 /* Botón con gradiente y animación al pasar el cursor */
 .hero-button {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 600;
     color: #fff;
     padding: 1.2rem 3.5rem;
     border: none;
@@ -168,6 +165,14 @@
 
 .hero-button:hover::before {
     left: 100%;
+}
+
+.hero-button a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
 }
 
 .rocket-icon {

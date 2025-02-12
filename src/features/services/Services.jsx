@@ -24,7 +24,7 @@ function Services() {
 
   return (
     <>
-      <section className="services-container">
+      <section className="services-container" id="servicios">
         <h2 className="services-title">Nuestros Servicios</h2>
         <div className="services-grid">
           {/* Tarjeta de IA Central */}

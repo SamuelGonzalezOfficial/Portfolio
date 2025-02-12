@@ -8,6 +8,7 @@ import { Testimonials } from '../features/testimonials/Testimonials'
 import { About } from '../features/about/About'
 import { Vision } from '../features/vision/Vision'
 import { Services } from '../features/services/Services'
+import { Models } from '../features/models/Models.jsx'
 import { Team } from '../features/team/Team.jsx'
 import { Footer } from '../features/footer/Footer.jsx'
 
@@ -20,6 +21,7 @@ function Landing() {
             <About />
             <Vision />
             <Services />
+            <Models />
             <Team />
             <Contact />
             <Footer />

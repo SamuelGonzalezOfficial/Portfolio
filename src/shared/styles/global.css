@@ -24,6 +24,11 @@ html, body {
     --font: 'Noto Sans', sans-serif;
 }
 
+/* Key character */
+.key {
+    color: #129dc4;
+}
+
 /* Botón */
 .button {
     background: none;

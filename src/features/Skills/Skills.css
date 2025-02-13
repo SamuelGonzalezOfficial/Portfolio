@@ -1,11 +1,6 @@
 /* Fondo de la sección */
 .skills-container {
     background-color: transparent;
-    padding: 50px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .skills-title {

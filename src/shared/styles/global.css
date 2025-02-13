@@ -82,3 +82,11 @@ html, body {
 .button-link:hover::after {
     transform: scaleX(1);
 }
+
+section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

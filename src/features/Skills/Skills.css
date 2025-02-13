@@ -1,0 +1,88 @@
+/* Fondo de la sección */
+.skills-container {
+    background-color: transparent;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-title {
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    color: #fff; /* Puedes cambiar el color si es necesario */
+    margin-bottom: 80px; /* Espaciado entre el título y las habilidades */
+    width: 100%;
+}
+
+
+/* Contenedor flexible para las habilidades */
+.skills-box {
+    display: flex;
+    flex-wrap: wrap;  /* Permite que los elementos se envuelvan si no caben */
+    justify-content: center;
+    gap: 50px;
+    max-width: 900px;
+}
+
+/* Cada habilidad (logo + texto) */
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Imágenes de los logos */
+.skill img {
+    width: 100px;
+    height: 100px;
+    filter: grayscale(100%); /* Hace que las imágenes sean grises */
+    transition: filter 0.2s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Cuando se hace hover, recupera el color */
+.skill img:hover {
+    filter: grayscale(0%);
+}
+
+/* Nombre de la habilidad */
+.skill-name {
+    color: #aaa;
+    font-size: 1rem;
+    margin-top: 10px;
+    font-weight: 100;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .skills-box {
+        gap: 15px;
+    }
+
+    .skill img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .skill-name {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .skill-name {
+        font-size: 0.9rem;
+    }
+
+    .key {
+        display: none;
+    }
+}

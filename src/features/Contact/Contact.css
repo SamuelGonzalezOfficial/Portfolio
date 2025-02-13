@@ -3,3 +3,16 @@
     font-size: 2rem;
     font-weight: 800;
 }
+
+@media (max-width: 710px){
+    .email {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 530px){
+    .email {
+        white-space: wrap;
+        font-size: 1rem;
+    }
+}

@@ -4,6 +4,7 @@ import React from 'react'
 import { Hero } from '../features/Hero/Hero'
 import { About } from '../features/About/About'
 import { Skills } from '../features/Skills/Skills'
+import { Projects } from '../features/Projects/Projects'
 
 function Home() {
     return (
@@ -11,6 +12,7 @@ function Home() {
             <Hero />
             <About />
             <Skills />
+            <Projects />
         </>
     )
 }

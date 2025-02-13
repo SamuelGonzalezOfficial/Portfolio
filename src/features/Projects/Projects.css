@@ -1,0 +1,179 @@
+/* Contenedor principal de la sección */
+.projects-container {
+    padding: 2rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Slider */
+  .slider {
+    position: relative;
+    width: 100%;
+    max-width: 90vw;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  /* Contenedor de slides */
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Cada slide ocupa el 100% del ancho del slider */
+  .slide {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 20px;
+  }
+  
+  /* Imagen del proyecto (lado izquierdo) */
+  .project-image {
+    height: 400px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .project-image img {
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .project-title {
+    font-size: 2rem;
+  }
+  
+  /* Descripción del proyecto (lado derecho) con efecto acrílico oscuro */
+  .project-description {
+    height: 400px;
+    flex: 1;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(1px);
+    border-radius: 5px;
+    padding: 2rem;
+    color: #aaa;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .project-description p {
+    margin: 10px 0;
+  }
+
+  .visit-link {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #fff;
+    transition: 0.2s;
+  }
+
+  .visit-link:hover {
+    background: #fff;
+    color: #000;
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+
+  .tag-html {
+    border-color: #ff5601;
+    color: #ff5601;
+    background: rgba(255, 86, 1, 0.1);
+  }
+
+  .tag-css {
+    border-color: rgb(1, 145, 255);
+    color: rgb(1, 145, 255);
+    background: rgba(1, 145, 255, 0.1);
+  }
+  .tag-js {
+    border-color: rgb(255, 238, 1);
+    color: rgb(255, 238, 1);
+    background: rgba(255, 238, 1, 0.1);
+  }
+  .tag-node {
+    border-color: rgb(53, 138, 73);
+    color: rgb(53, 138, 73);
+    background: rgba(53, 138, 73, 0.1);
+  }
+  .tag-mongo {
+    border-color: rgb(21, 217, 67);
+    color: rgb(21, 217, 67);
+    background: rgba(21, 217, 67, 0.1);
+  }
+  .tag-express {
+    border-color: rgb(151, 151, 151);
+    color: rgb(151, 151, 151);
+    background: rgba(151, 151, 151, 0.1);
+  }
+  .tag-react {
+    border-color: rgb(71, 227, 255);
+    color: rgb(71, 227, 255);
+    background: rgba(71, 227, 255, 0.1);
+  }
+  
+  /* Botones de navegación */
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 3px;
+    transition: background 0.3s ease;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .prev {
+    left: -10px;
+  }
+  
+  .next {
+    right: -10px;
+  }
+  
+  /* Responsive: apilar imagen y descripción en pantallas pequeñas */
+  @media screen and (max-width: 1125px) {
+    .slide {
+      flex-direction: column;
+    }
+    .project-image {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .project-image img {
+        width: 100%;
+    }
+  }  

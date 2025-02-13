@@ -1,0 +1,110 @@
+/* Contenedor principal */
+.hero-container {
+    width: 100vw;
+    min-height: 100vh;
+    --dot-bg: black;
+    --dot-color: rgb(184, 184, 184);
+    --dot-size: 1px;
+    --dot-space: 22px;
+    background:
+        linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        var(--dot-color);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenido del hero */
+.hero-content {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1.5s ease-out forwards;
+    opacity: 0;
+}
+
+/* Texto superior con animación slide-up */
+.hero-super {
+    font-size: 2rem;
+    font-weight: 200;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+/* Título con animación de escritura mecanografiada */
+.hero-title {
+    text-align: center;
+    font-size: 8rem;
+    font-weight: 900;
+    overflow: hidden;            /* Oculta el texto excedente */
+    white-space: nowrap;         /* Evita saltos de línea */
+    border-right: 40px solid #fff; /* Simula el cursor */
+    display: inline-block;       /* Permite animar el ancho */
+    width: 0;                    /* Inicia oculto para la animación */
+    animation: typing 3s steps(30, end) forwards, 
+               blink-caret 0.75s step-end infinite,
+               hide-caret 0s 3s forwards;
+}
+
+/* Subtítulo con animación slide-up */
+.hero-subtitle {
+    max-width: 1100px;
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+/* Animación de escritura */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Cursor parpadeante */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #fff; }
+}
+
+/* Oculta el cursor de golpe al terminar la animación */
+@keyframes hide-caret {
+    to { border-right-color: transparent; border: none; }
+}
+
+@media (max-width: 1330px) {
+    .hero-title {
+        font-size: 5rem;
+    }
+}
+
+/* Responsividad */
+@media (max-width: 880px) {
+    .key {
+        display: none;
+    }
+
+    .hero-title {
+        width: 100%;
+        border: none;
+        font-size: 5rem;
+        white-space: wrap;
+        border-right: 0;
+        flex-wrap: wrap;
+        animation: fadeInUp 0.5s ease-out forwards;
+    }
+    .hero-super {
+        font-size: 1.5rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+}

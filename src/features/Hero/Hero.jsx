@@ -6,7 +6,7 @@ import { Button } from '../../shared/components/Button'
 
 function Hero(){
     return (
-        <header className='hero-container'>
+        <header className='hero-container' id="start">
             <div className="hero-content">
                 <h3 className="hero-super">Desarrollo Web Full-Stack</h3>
                 <h1 className="hero-title"><span className="key">{"{"}</span> Samuel Gonz&aacute;lez <span className="key">{"}"}</span></h1>

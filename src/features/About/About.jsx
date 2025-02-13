@@ -5,7 +5,7 @@ import coding from '../../assets/images/coding.svg';
 
 function About(){
     return (
-        <section className="about-container">
+        <section className="about-container" id="about">
             <div className="about-content">
                 <div className="about-text">
                     <h2 className="about-title title"><span className="key">{"{"}</span> Sobre m&iacute; <span className="key">{"}"}</span></h2>

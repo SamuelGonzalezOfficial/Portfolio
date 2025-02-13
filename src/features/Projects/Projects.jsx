@@ -26,7 +26,7 @@ function Projects() {
   }, [currentIndex]);
 
   return (
-    <section className="projects-container">
+    <section className="projects-container" id="projects">
       <h2 className="title">
         <span className="key">{'{'}</span> Proyectos <span className="key">{'}'}</span>
       </h2>

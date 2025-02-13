@@ -1,15 +1,7 @@
 /* Contenedor principal */
 .hero-container {
-    width: 100vw;
+    max-width: 100vw;
     min-height: 100vh;
-    --dot-bg: black;
-    --dot-color: rgb(184, 184, 184);
-    --dot-size: 1px;
-    --dot-space: 22px;
-    background:
-        linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-        linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-        var(--dot-color);
     padding: 20px;
     display: flex;
     justify-content: center;

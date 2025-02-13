@@ -30,7 +30,7 @@ function Menu() {
         <a 
           href="#start" 
           className="menu-init" 
-          onClick={(e) => handleMenuClick(e, 'about')}
+          onClick={(e) => handleMenuClick(e, 'start')}
         >
           <span className="key-menu">{"{"}</span><span className="menu-icon">S</span><span className="key-menu">{"}"}</span>
         </a>

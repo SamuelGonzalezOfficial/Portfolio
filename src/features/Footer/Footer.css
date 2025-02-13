@@ -1,0 +1,25 @@
+.footer {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #b8b5c6;
+}
+
+@media (max-width: 780px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer > span {
+        white-space: wrap;
+        display: block;
+    }
+}

@@ -16,7 +16,7 @@ import vscBig from '../../assets/images/vsc-big.png';
 function Skills(){
     return (
         <section className="skills-container">
-            <h2 className="skills-title">
+            <h2 className="title">
                 <span className="key">{"{"}</span> Habilidades <span className="key">{"}"}</span>
             </h2>
             <div className="skills-box">

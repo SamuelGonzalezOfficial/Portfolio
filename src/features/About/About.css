@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Container with flex layout for left text & right image */
 .about-container {
     display: flex;
@@ -18,7 +20,7 @@
     justify-content: center;
 }
 
-.title {
+.about-title {
     text-align: start;
     margin-bottom: 20px;
 }
@@ -29,28 +31,9 @@
 }
 
 .about-p {
-    display: flex;
-    background: rgba(255, 255, 255, 0.07);
-    backdrop-filter: blur(10px);
-    border-radius: 12px;
-    padding: 2rem;
-    color: #fff;
+    color: #aaa;
     font-size: 1.1rem;
-    line-height: 1.6;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.about-p:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-}
-
-.quote {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 5rem;
-    color: var(--color);
+    font-weight: 200;
 }
 
 /* Right side image */
@@ -68,12 +51,16 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .about-container {
         padding: 1rem;
+        min-height: auto;
     }
     .about-text {
         padding: 1rem;
         margin-bottom: 1rem;
+    }
+    .about-image {
+        display: none;
     }
 }

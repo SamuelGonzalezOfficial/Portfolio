@@ -3,16 +3,6 @@
     background-color: transparent;
 }
 
-.skills-title {
-    font-size: 3rem;
-    font-weight: 800;
-    text-align: center;
-    color: #fff; /* Puedes cambiar el color si es necesario */
-    margin-bottom: 80px; /* Espaciado entre el título y las habilidades */
-    width: 100%;
-}
-
-
 /* Contenedor flexible para las habilidades */
 .skills-box {
     display: flex;

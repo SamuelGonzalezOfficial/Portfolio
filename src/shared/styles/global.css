@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --color: #129dc4
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -27,6 +31,16 @@ html, body {
 /* Key character */
 .key {
     color: #129dc4;
+}
+
+/* Title */
+.title {
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    color: #fff; /* Puedes cambiar el color si es necesario */
+    margin-bottom: 80px; /* Espaciado entre el título y las habilidades */
+    width: 100%;
 }
 
 /* Botón */

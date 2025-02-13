@@ -18,16 +18,31 @@
     justify-content: center;
 }
 
+.title {
+    text-align: start;
+    margin-bottom: 20px;
+}
+
 /* Glass effect for text box */
 .about-text {
     flex: 1 1 400px;
+}
+
+.about-p {
+    display: flex;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(8px);
-    border-radius: 16px;
+    backdrop-filter: blur(1px);
+    border-radius: 5px;
     padding: 2rem;
     color: #fff;
     font-size: 1.1rem;
     line-height: 1.6;
+}
+
+.quote {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    color: var(--color);
 }
 
 /* Right side image */

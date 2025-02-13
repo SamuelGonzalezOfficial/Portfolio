@@ -1,0 +1,56 @@
+/* Container with flex layout for left text & right image */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+/* The wrapper for text & image */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Glass effect for text box */
+.about-text {
+    flex: 1 1 400px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    padding: 2rem;
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Right side image */
+.about-image {
+    flex: 1 1 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 1rem;
+    }
+    .about-text {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+}

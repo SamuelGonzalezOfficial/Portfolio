@@ -42,8 +42,7 @@ function Projects() {
                 Tipo: <span className="tag">Landing Page</span>
               </p>
               <p>
-                Lenguajes: <span className="tag tag-html">HTML5</span> <span className="tag tag-css">CSS3</span> <span className="tag tag-js">JavaScript</span>
-                <span className="tag tag-react">React</span><span className="tag tag-node">Node</span><span className="tag tag-express">Express</span><span className="tag tag-mongo">MongoDB</span>
+                Lenguajes: <span className="tag tag-html">HTML5</span><span className="tag tag-css">CSS3</span><span className="tag tag-js">JavaScript</span><span className="tag tag-react">React</span><span className="tag tag-node">Node</span><span className="tag tag-express">Express</span><span className="tag tag-mongo">MongoDB</span>
               </p>
               <p>
                 Landing Page para Start-Up de Inteligencia Artificial que ofrece servicio a negocios, empresas e instituciones.
@@ -61,8 +60,7 @@ function Projects() {
                 Tipo: <span className="tag">Plataforma</span>
               </p>
               <p>
-                Lenguajes: <span className="tag tag-html">HTML5</span> <span className="tag tag-css">CSS3</span> <span className="tag tag-js">JavaScript</span>
-                <span className="tag tag-node">Node</span><span className="tag tag-express">Express</span><span className="tag tag-mongo">MongoDB</span>
+                Lenguajes: <span className="tag tag-html">HTML5</span><span className="tag tag-css">CSS3</span><span className="tag tag-js">JavaScript</span><span className="tag tag-node">Node</span><span className="tag tag-express">Express</span><span className="tag tag-mongo">MongoDB</span>
               </p>
               <p>
                 Plataforma para crear y gestionar notas r&aacute;pidas tipo POST-IT.

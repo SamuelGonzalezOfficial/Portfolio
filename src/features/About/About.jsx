@@ -10,7 +10,12 @@ function About(){
                 <div className="about-text">
                     <h2 className="about-title title"><span className="key">{"{"}</span> Sobre m&iacute; <span className="key">{"}"}</span></h2>
                     <p className="about-p">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro enim expedita harum, molestias impedit nihil minus aliquam, quisquam mollitia aut consequuntur adipisci eos consectetur perspiciatis corporis optio, voluptatibus voluptatem at. Atque quasi maxime, magnam alias aperiam eos accusantium corrupti minus soluta odit culpa doloribus? Tempore quisquam dolores labore velit cumque.
+                        Di mis primeros pasos en el mundo de la programaci&oacute;n a los 12 años, escribiendo mi primera l&iacute;nea 
+                        de c&oacute;digo. Y ahora, 6 años despu&eacute;s, 
+                        soy un programador 100% autodidacta especializado en desarrollo web, ofreciendo soluciones web a negocios y 
+                        particulares como freelancer y actualmente trabajando como desarrollador
+                        Front-End en Ainstein {"("}<a href="https://ainstein.cl" className="about-link">https://ainstein.cl</a>{")"}, una Start-Up chilena 
+                        de Inteligencia Artificial que ofrece soluciones a empresas e instituciones.
                     </p>
                 </div>
                 <div className="about-image">

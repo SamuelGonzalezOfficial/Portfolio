@@ -32,8 +32,13 @@
 
 .about-p {
     color: #aaa;
-    font-size: 1.1rem;
-    font-weight: 200;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+.about-link {
+    color: var(--color);
 }
 
 /* Right side image */

@@ -14,7 +14,7 @@ function About(){
                         de c&oacute;digo. Y ahora, 6 años despu&eacute;s, 
                         soy un programador 100% autodidacta especializado en desarrollo web, ofreciendo soluciones web a negocios y 
                         particulares como freelancer y actualmente trabajando como desarrollador
-                        Front-End en Ainstein {"("}<a href="https://ainstein.cl" className="about-link">https://ainstein.cl</a>{")"}, una Start-Up chilena 
+                        Front-End en Ainstein{/*{"("}<a href="https://ainstein.cl" className="about-link">https://ainstein.cl</a>{")"}*/}, una Start-Up chilena 
                         de Inteligencia Artificial que ofrece soluciones a empresas e instituciones.
                     </p>
                 </div>
